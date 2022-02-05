@@ -1,0 +1,20 @@
+version: '3.8'
+
+
+networks:
+  http_net:
+    name: http_net
+    external: true
+
+
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: intent_sentiment_demo
+    restart: on-failure
+    ports:
+      - 8006:8006
+    networks:
+      - http_net
