@@ -2,8 +2,8 @@ from .preprocess import preprocess
 import fasttext
 
 
-intent_model = fasttext.load_model("./statics/INTENT_model.bin")
-sentiment_model = fasttext.load_model("./statics/SENTIMENT_model.bin")
+intent_model = fasttext.load_model("src/statics/INTENT_model.bin")
+sentiment_model = fasttext.load_model("src/statics/SENTIMENT_model.bin")
 
 
 
